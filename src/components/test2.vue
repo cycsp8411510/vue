@@ -54,30 +54,35 @@ export default {
 
 
 <style lang="scss">
-// @use "@material/floating-label/mdc-floating-label";
-// @use "@material/line-ripple/mdc-line-ripple";
-// @use "@material/notched-outline/mdc-notched-outline";
-// @use "@material/textfield";
+ @use "@material/floating-label/mdc-floating-label";
+ @use "@material/line-ripple/mdc-line-ripple";
+ @use "@material/notched-outline/mdc-notched-outline";
+ @use "@material/textfield";
 
 // @include textfield.core-styles;
 
 // @import "@material/textfield/mdc-text-field";
 // @import "@material/textfield/ljhlkjh";
-// $testingcolor: orange;
+ $testingcolor: orange;
 
-// .mixin-text:not(.mdc-text-field--focused) {
-//   @include label-color(red);
-// }
+ @mixin label-color($red){
+   color: red;
+ }
+
+ .mixin-text:not(.mdc-text-field--focused) {
+   @include label-color(red);
+ }
 
 // @use "@material/textfield";
 
 @import "../test.scss";
-// @mixin funky-color {
-//   color: green;
-// }
-.testing-scss {
-  @include funky-color(purple);
-}
+
+ @mixin funky-color($purple) {
+   color: purple;
+ }
+ .testing-scss {
+   @include funky-color(purple);
+ }
 
 .header {
   background-size: cover;
