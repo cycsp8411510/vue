@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <div><span class="testing-scss">Testing SCSS</span></div>
+      <div><span class="label-color">Testing SCSS</span></div>
     </div>
     <div class="mdc-card sign-in-card">
         <label class="mixin-text mdc-text-field mdc-text-field--outlined">
@@ -54,30 +54,16 @@ export default {
 
 
 <style lang="scss">
-// @use "@material/floating-label/mdc-floating-label";
-// @use "@material/line-ripple/mdc-line-ripple";
-// @use "@material/notched-outline/mdc-notched-outline";
-// @use "@material/textfield";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
 
-// @include textfield.core-styles;
-
-// @import "@material/textfield/mdc-text-field";
-// @import "@material/textfield/ljhlkjh";
-// $testingcolor: orange;
 
 @import "../test.scss";
  .mixin-text:not(.mdc-text-field--focused) {
    @include label-color(red);
  }
-
- @use "@material/textfield";
-
- //@mixin funky-color {
- //  color: green;
- //}
-.testing-scss {
-  @include funky-color(purple);
-}
 
 .header {
   background-size: cover;
