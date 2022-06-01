@@ -59,11 +59,17 @@ export default {
 @use "@material/notched-outline/mdc-notched-outline";
 @use "@material/textfield";
 
+//@import "../test.scss";
+// .mixin-text:not(.mdc-text-field--focused) {
+//   @include label-color(red);
+// }
 
-@import "../test.scss";
- .mixin-text:not(.mdc-text-field--focused) {
-   @include label-color(red);
- }
+//
+//@import "../test.scss";
+//.label-color{
+//  @include funky-color(purple);
+//}
+//
 
 .header {
   background-size: cover;
