@@ -5,8 +5,10 @@
 </template>
 
 <script>
+import Test2 from "./components/test2";
 export default {
   name: "App",
+  components: {Test2},
 };
 </script>
 

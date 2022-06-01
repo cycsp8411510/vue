@@ -33,7 +33,7 @@
 import { MDCTextField } from "@material/textfield";
 
 export default {
-  name: "tt",
+  name: "test2",
   data: () => ({
     errors: {
       email: "",
@@ -65,16 +65,16 @@ export default {
 // @import "@material/textfield/ljhlkjh";
 // $testingcolor: orange;
 
-// .mixin-text:not(.mdc-text-field--focused) {
-//   @include label-color(red);
-// }
-
-// @use "@material/textfield";
-
 @import "../test.scss";
-// @mixin funky-color {
-//   color: green;
-// }
+ .mixin-text:not(.mdc-text-field--focused) {
+   @include label-color(red);
+ }
+
+ @use "@material/textfield";
+
+ //@mixin funky-color {
+ //  color: green;
+ //}
 .testing-scss {
   @include funky-color(purple);
 }

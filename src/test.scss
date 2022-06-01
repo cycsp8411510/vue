@@ -1,3 +1,6 @@
 @mixin funky-color($color) {
     color: $color;
 }
+@mixin label-color($color) {
+  color: $color;
+}
